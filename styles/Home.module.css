@@ -1,0 +1,82 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.notebook {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  background-image: linear-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 100% 1.6em;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.newEntry {
+  background-color: #e6f3ff;
+  border: 2px dashed #4a90e2;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.newEntry:hover {
+  background-color: #d1e8ff;
+  transform: scale(1.02);
+}
+
+.plusSign {
+  font-size: 48px;
+  display: block;
+  color: #4a90e2;
+}
+
+.pastEntries {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.memoryBox {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.memoryBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.memoryBox h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.memoryBox p {
+  margin: 0;
+  color: #666;
+}
